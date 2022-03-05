@@ -34,6 +34,8 @@ int main (int argc, char** argv){
 	 
 	 
 	 
+	 
+	 
 	 // numeros pares e impares
 	
 	int impar1= 0, par2 = 0, tPar = 0; 
@@ -97,8 +99,28 @@ int main (int argc, char** argv){
     cout << "\nLos numeros pares son: " << par1 << endl;
 	 
 	 
-	 
-	 
+	 // dias de la semana
+	 cout<< "Que dia de la semana le interesaria saber si es de descaso o laboral?" << "\n";
+	cout << "Entre los parentecis esta el diminutivo para que pueda seleccionar el dia que usted dese" << "\n";
+	cout<< " Lunes   (l) " << "\n"; 
+	cout<< " Martes  (m): " << "\n"; 
+	cout<< " Miercoles (x) " << "\n"; 
+	cout<< " Jueves  (j)" << "\n";
+	cout<< " Viernes (v)" << "\n";
+	cout<< " Sabado  (s)" << "\n";
+	cout<< " Domingo (d)" << "\n";	
+	char opc1 ;
+	cout<< "ingrese un numero para seleccionar la opcion que usted desee ejecutar" << "\n"; 
+	cin>> opc1;
+	switch(opc1){ 
+		case 'l': cout << "trabajo"; break;
+		case 'm': cout << "trabajo"; break;
+		case 'x': cout << "trabajo"; break;
+		case 'j': cout << "trabajo"; break;
+		case 'v': cout << "trabajo"; break;
+		case 's': cout << "descanso"; break;
+		case 'd': cout << "descanso"; break;
+	}
 }
 
 
