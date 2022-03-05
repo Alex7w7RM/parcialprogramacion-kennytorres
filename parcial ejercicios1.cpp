@@ -1,8 +1,42 @@
 #include "iostream"
 #include "string"
+#include <stdio.h>
+#include <string.h>
 using namespace std;
 
-int main (int argc, char** argv){
+char pass[10];
+int correcto;
+int intento;
+const char contrasena[]="123456"; 
+
+int main ( int argc, char** argv){
+	
+	// contraseña
+	
+		intento=1;
+    correcto=0;
+    printf("Ingrese la contrasena: "); gets(pass); printf("\n");
+    if (strcmp(pass,contrasena)==0) correcto=1;
+    
+    while ((correcto==0)&&(intento<3))
+    {
+        intento++;
+        printf("Contrasena incorrecta. %i intento: ", intento); gets(pass); printf("\n");
+        if (strcmp(pass,contrasena)==0) correcto=1;
+    }
+    if (correcto==0) printf("Intentos insuficientes.");
+    
+    else
+        {
+            printf("Contraseña correcta.");  
+            
+        }
+	
+	
+	
+	//factorizacion
+	
+	
 	int dat1, dat2=1;
 	
 	printf("ingrese el numero que desea factorizar:");
@@ -121,6 +155,12 @@ int main (int argc, char** argv){
 		case 's': cout << "descanso"; break;
 		case 'd': cout << "descanso"; break;
 	}
+	
+
+
+
+	
+	
 }
 
 
