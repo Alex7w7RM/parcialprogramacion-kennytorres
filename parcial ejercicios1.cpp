@@ -12,6 +12,23 @@ int main (int argc, char** argv){
 		
 	}
 	printf("%d",dat2);
+	
+	
+	
+	//tabla de multiplicar
+	
+	char seguir;
+    int a, num3;
+
+    
+    
+        printf( " \ningrese el numero que desee multiplicar en la tabla:\n " );
+        scanf( "%d", & num3 );
+
+        printf( "\n   La tabla de multiplicar del %d es:\n", num3 );
+
+        for ( a = 1 ; a <= 10 ; a++ )
+            printf( "\n   %d * %d = %d", a, num3, a * num3 );
 	 
 }
 
